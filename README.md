@@ -18,7 +18,7 @@ for idx, num in enumerate(data):
 
 ## Sort Complex Iterables with sorted()
 
-````
+```
 data = [4,3,2,1]
 print(sorted(data))
 ```
