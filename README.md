@@ -51,3 +51,40 @@ data = [{"age": 4},{"age": 3},{"age": 2},{"age": 1}]
 print(data[0].get("name","defaultName"))
 ```
 
+## 7. count hashable objects with Collections.counter
+```
+from collections import Counter
+data = [1,2,3,4,3,4,4]
+counter = Counter(data)
+print(counter)
+print(counter[4])
+```
+
+## 8. use format strings using f
+```
+name = "xxxxx"
+i = 10
+template = f"{name} range is between {i} and {i*i}"
+print(template)
+```
+
+## 9. concat strings with join (why ?)
+```
+my_list = ["my", "name", "is", "xxx"]
+print(" ".join(my_list))
+```
+
+## 10. Merging dictionaries
+```
+dict1 = {"name": "zz", "age": 6}
+dict2 = {"name": "yy", "city": "newyork"}
+print({**dict1,**dict2})
+```
+
+## 11. simplify if statement with in
+```
+colors = ['green', 'red', 'yello']
+color = 'green'
+if color in colors:
+    print(True)
+```
