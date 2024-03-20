@@ -30,3 +30,24 @@ print(sorted(data, key=lambda x: x["age"]))
 data = [1,2,4,4]
 print(set(data))
 ```
+
+## 5. Remember the generator which will save memory in case of large datasets
+```
+import sys
+my_list = [i for i in range(10000)]
+print(type(my_list))
+print(sys.getsizeof(my_list), "bytes")
+
+my_gen = (i for i in range(10000))
+print(type(my_gen))
+print(sys.getsizeof(my_gen), "bytes")
+```
+
+## 6. Use Get and set the default for the dictionary
+
+```
+if you use attribute name and key does not exist . it will throw an error
+data = [{"age": 4},{"age": 3},{"age": 2},{"age": 1}]
+print(data[0].get("name","defaultName"))
+```
+
