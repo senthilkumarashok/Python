@@ -18,11 +18,11 @@ for idx, num in enumerate(data):
 
 ## Sort Complex Iterables with sorted()
 
+````
 data = [4,3,2,1]
-
-print(sorted(data, reverse=True))
 print(sorted(data))
-
+```
+```
 data = [{"age": 4},{"age": 3},{"age": 2},{"age": 1}]
-
 print(sorted(data, key=lambda x: x["age"]))
+```
