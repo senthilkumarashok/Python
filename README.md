@@ -15,7 +15,17 @@ for idx, num in enumerate(data):
 
 ## 2. List comprehensions
 
+see how matrix transpose can be written very easily
+```
+arr = [[1,2,3],
+     [4,5,6],
+     ]
+MT = [ [arr[row][col] for row in range(len(arr))] for col in range(len(arr[0]))]
+print(MT)
+```
+
 ## 3. Sort Complex Iterables with sorted()
+
 ```
 data = [4,3,2,1]
 print(sorted(data))
@@ -26,12 +36,14 @@ print(sorted(data, key=lambda x: x["age"]))
 ```
 
 ## 4. Use Set method to avoid duplicates
+
 ```
 data = [1,2,4,4]
 print(set(data))
 ```
 
 ## 5. Remember the generator which will save memory in case of large datasets
+
 ```
 import sys
 my_list = [i for i in range(10000)]
@@ -52,6 +64,7 @@ print(data[0].get("name","defaultName"))
 ```
 
 ## 7. count hashable objects with Collections.counter
+
 ```
 from collections import Counter
 data = [1,2,3,4,3,4,4]
@@ -61,6 +74,7 @@ print(counter[4])
 ```
 
 ## 8. use format strings using f
+
 ```
 name = "xxxxx"
 i = 10
@@ -69,12 +83,14 @@ print(template)
 ```
 
 ## 9. concat strings with join (why ?)
+
 ```
 my_list = ["my", "name", "is", "xxx"]
 print(" ".join(my_list))
 ```
 
 ## 10. Merging dictionaries
+
 ```
 dict1 = {"name": "zz", "age": 6}
 dict2 = {"name": "yy", "city": "newyork"}
@@ -82,6 +98,7 @@ print({**dict1,**dict2})
 ```
 
 ## 11. simplify if statement with in
+
 ```
 colors = ['green', 'red', 'yello']
 color = 'green'
